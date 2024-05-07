@@ -1,0 +1,24 @@
+server:
+  port: 9500
+spring:
+  application:
+    name: demo_microservice
+  profiles:
+    active:
+    - jdbc
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: w!nterc@stle
+    driver-class-name: org.postgresql.Driver
+  cloud:
+    config:
+      label: jdbc
+      server:
+        bootstrap: true
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false

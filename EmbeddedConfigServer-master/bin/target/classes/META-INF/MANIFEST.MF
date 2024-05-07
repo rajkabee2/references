@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Built-By: kabee.shrestha
+Build-Jdk: 17.0.10
+Implementation-Title: Embedded-ConfigServer-Jdbc
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.ppes
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/Embedded-Confi
+ gServer-Jdbc/
+Created-By: Maven Integration for Eclipse
+

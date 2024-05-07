@@ -1,0 +1,23 @@
+server:
+  port: 9500
+spring:
+  application:
+    name: demo_microservice
+  profiles:
+    active:
+    - jdbc
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Sample
+    username: postgresql
+    password: admin
+  cloud:
+    config:
+      label: jdbc
+      server:
+        bootstrap: true
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
