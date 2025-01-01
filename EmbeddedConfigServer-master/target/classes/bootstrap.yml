@@ -4,8 +4,7 @@ spring:
   application:
     name: demo_microservice
   profiles:
-    active:
-    - jdbc
+    active: jdbc
   datasource:
     url: jdbc:postgresql://localhost:5432/test
     username: postgres

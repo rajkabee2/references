@@ -1,0 +1,16 @@
+
+spring:
+# change the application name for your project name , this name is reserved for the maven archetype code generation
+  application:
+    name: embedCloudConfig
+
+
+# DO NOT FORGET TO ADD YOUR YAML CONFIG FILE IN config server as shown below
+
+  cloud:
+    config:
+      failFast: true
+      server:
+        bootstrap: true
+        git:
+          uri: https://gitlab.com/rajkabee1/cloudconfig.git

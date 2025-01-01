@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cloudConfigServer
+  server:
+    port: 8888
+  profiles:
+    active: composite, jdbc
+#    active: DEV,jdbc, 
+
+  ## GIT
+  cloud:
+    config:
+      server:
+        bootstrap: true
+## JDBC
+        jdbc:
+          order: 1
+          sql: SELECT KEY, VALUE,LABEL from PROPERTIES where APPLICATION=? and PROFILE=? and LABEL=?
+           
